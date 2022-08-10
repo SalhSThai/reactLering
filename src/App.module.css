@@ -1,0 +1,10 @@
+.test {
+border-radius: 100%;
+width: 200px;
+height: 200px;
+border: 4px solid blue;
+}
+
+.test2{
+background-color: yellow;
+}
