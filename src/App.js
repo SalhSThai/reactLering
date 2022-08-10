@@ -1,23 +1,30 @@
 import logo from './logo.svg';
 import './App.css';
 
+const btn = {
+  width:"100px",
+  height:"100px",
+  borderRadius:"100%",
+  margin:"20px"
+}
+const AddBtn = function(){
+const jsx =<div>
+
+  
+</div>
+
+return jsx;
+}
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{display:"flex",justifyContent:"center",alignItems:"center",width:"100vw",height:"100vh"}}>
+      <button style={btn}>-</button> <h1>0</h1> <button style={btn}>+</button> <button className='resetBtn'>Reset</button>
+      <div>
+        <AddBtn/>
+
+
+      </div>
     </div>
   );
 }
