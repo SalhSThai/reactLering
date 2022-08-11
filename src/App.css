@@ -6,6 +6,11 @@
   height: 40vmin;
   pointer-events: none;
 }
+.bg{
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(159, 182, 219, 1) 0%, rgba(171, 207, 242, 1) 8%, rgba(255, 255, 255, 1) 18%, rgba(255, 255, 255, 1) 82%, rgba(171, 207, 242, 1) 91%, rgba(159, 182, 219, 1) 100%);
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
