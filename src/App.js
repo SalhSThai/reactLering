@@ -3,45 +3,45 @@ import { render } from "react-dom";
 
 // class App extends React.Component {
 
-// declare state#1
-// constructor(props){
-//   super(props);
-//   this.state = {
-//     count:0,
-//     error:''
-//   };
-//   this.handleClickDecreaseBtn = this.handleClickDecreaseBtn.bind(this)
-// }
-// declare state#2
-// state = {
-//   count: 0,
-//   error: ''
-// }
+declare state#1
+constructor(props){
+  super(props);
+  this.state = {
+    count:0,
+    error:''
+  };
+  this.handleClickDecreaseBtn = this.handleClickDecreaseBtn.bind(this)
+}
+declare state#2
+state = {
+  count: 0,
+  error: ''
+}
 
-// handleClickDecreaseBtn = () => {
-//   if (this.state.count > 0) {
-//     this.setState({ count: this.state.count - 1 });
-//   }
-// }
-//   handleClickDecreaseBtn(){
-//     if (this.state.count > 0) {
-//       this.setState({ count: this.state.count - 1 });
-//     }
-//   }
-//   render() {
-//     return <div style={{ textAlign: 'center' }}>
+handleClickDecreaseBtn = () => {
+  if (this.state.count > 0) {
+    this.setState({ count: this.state.count - 1 });
+  }
+}
+  handleClickDecreaseBtn(){
+    if (this.state.count > 0) {
+      this.setState({ count: this.state.count - 1 });
+    }
+  }
+  render() {
+    return <div style={{ textAlign: 'center' }}>
 
-//       <h1>React class Component</h1>
-//       <h2>{this.state.count}</h2>
-//       <button className="btn btn-outline-success" onClick={() => {//updateStateFn:setState
-//         this.setState({ count: this.state.count + 1 })
+      <h1>React class Component</h1>
+      <h2>{this.state.count}</h2>
+      <button className="btn btn-outline-success" onClick={() => {//updateStateFn:setState
+        this.setState({ count: this.state.count + 1 })
 
-//       }}>+</button>
-//       <button className="btn btn-outline-danger" onClick={this.handleClickDecreaseBtn}>-</button>
-//       <p>{this.state.count}</p>
-//     </div>
-//   }
-// }
+      }}>+</button>
+      <button className="btn btn-outline-danger" onClick={this.handleClickDecreaseBtn}>-</button>
+      <p>{this.state.count}</p>
+    </div>
+  }
+}
 
 // class App {
 //   //property
