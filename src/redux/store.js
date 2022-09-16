@@ -21,6 +21,7 @@ const counterSlice = createSlice({
       logout:(state,action)=>{}
     }
   })
+  console.log(counterSlice);
   
   const store = configureStore({
     reducer:{
