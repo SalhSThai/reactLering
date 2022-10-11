@@ -9,7 +9,7 @@ const counterSlice = createSlice({
         state.count += (action.payload ?? 1)
       },
       decrease: (state, action) => {
-        state.count -= 1
+        state.count = 99
       }
     }
   })

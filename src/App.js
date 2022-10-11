@@ -6,6 +6,7 @@ import { countAction } from './redux/store';
 function App() {
   const count = useSelector(state => state.count.count);
   const dispatch = useDispatch()
+  console.log(count);
   return (
     <div className="App">
       <h1>{count}</h1>
