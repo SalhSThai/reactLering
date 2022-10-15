@@ -1,19 +1,17 @@
 
 import './App.css';
-import { useDispatch, useSelector } from 'react-redux';
-import { countAction } from './redux/store';
+import { Routes, Route } from 'react-router-dom'
+import Home from '../src/redux/Page/Home';
+
 
 function App() {
-  const count = useSelector(state => state.count.count);
-  const dispatch = useDispatch()
-  console.log(count);
+
   return (
-    <div className="App">
-      <h1>{count}</h1>
-      <button onClick={()=>dispatch(countAction.increase())}>+</button>
-      <button onClick={()=>dispatch(countAction.decrease())}>-</button>
-      <button onClick={()=>dispatch(countAction.increase(2))}>Increase by two</button>
-    </div>
+
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='*' element={<h1>404! this page is not found!!!</h1>} />
+    </Routes>
   );
 }
 
